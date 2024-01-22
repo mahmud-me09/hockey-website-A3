@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey's</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Daisy UI and Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="images/hockey-puck-solid.svg" type="image/x-icon">
+    <!-- Custom Color -->
+    <script>
+        tailwind.config = {
+        theme: {
+            extend:{
+                colors: {
+                    'primary-color': '#FF4240',
+                }
+            }
+        }
+    }
+    </script>
+    <!-- google font Manrope-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- custom font style -->
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-manrope p-0 m-0 box-border">
+    <header class="px-4 lg:px-36">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a class="text-primary-color">Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <a class="text-3xl font-extrabold">Hockey<span class="p-0 text-primary-color">'</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 font-bold">
+                <li><a class="text-primary-color ">Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                <button class="hidden lg:inline px-4" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                </button>
+              <a class="btn text-white bg-primary-color hover:text-black">Get Ticket</a>
+            </div>
+          </div>
+        
+    </header>
+    <main>
+        <!-- carousel -->
+        <section class="p-4 lg:px-36">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img class="w-full lg:h-[550px]" src="Images/1.png" class="w-full" />
+                  <div class="absolute w-full flex justify-center lg:place-content-start bottom-0">
+                    <a href="#slide4" class="btn btn-circle bg-black text-white m-2">❮</a> 
+                    <a href="#slide2" class="btn btn-circle bg-black text-white m-2">❯</a>
+                  </div>
+                  <div class="bg-black text-white p-8 lg:w-[510px] rounded-xl absolute lg:right-8 lg:bottom-8">
+                    <h3>Meet all the heroes from the field</h3>
+                    <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                  <div class="absolute w-full flex justify-center lg:place-content-start bottom-0">
+                    <a href="#slide1" class="btn btn-circle bg-black text-white m-2">❮</a> 
+                    <a href="#slide3" class="btn btn-circle bg-black text-white m-2">❯</a>
+                  </div>
+                  <div class="bg-black text-white p-8 lg:w-[510px] rounded-xl absolute lg:right-8 lg:bottom-8">
+                    <h3>Meet all the heroes from the field</h3>
+                    <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                  <div class="absolute w-full flex justify-center lg:place-content-start bottom-0">
+                    <a href="#slide2" class="btn btn-circle bg-black text-white m-2">❮</a> 
+                    <a href="#slide4" class="btn btn-circle bg-black text-white m-2">❯</a>
+                  </div>
+                  <div class="bg-black text-white p-8 lg:w-[510px] rounded-xl absolute lg:right-8 lg:bottom-8">
+                    <h3>Meet all the heroes from the field</h3>
+                    <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+                  </div> 
+                </div>
+                
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                  <div class="absolute w-full flex justify-center lg:place-content-start bottom-0">
+                    <a href="#slide3" class="btn btn-circle bg-black text-white m-2">❮</a> 
+                    <a href="#slide1" class="btn btn-circle bg-black text-white m-2">❯</a>
+                  </div>
+                <div class="bg-black text-white p-8 lg:w-[510px] rounded-xl absolute lg:right-8 lg:bottom-8">
+                <h3>Meet all the heroes from the field</h3>
+                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+              </div>
+   
+              </div>
+              <div class="bg-black text-white p-8 w-full rounded-xl mt-5 lg:hidden">
+                <h3>Meet all the heroes from the field</h3>
+                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+              </div>
+        </section>
+        <!-- Ratings -->
+        <section>
+
+        </section>
+        <!-- Programs -->
+        <section>
+
+        </section>
+        <!-- Products -->
+        <section>
+
+        </section>
+        <!-- FAQ -->
+        <section>
+
+        </section>
+        <!-- Contact -->
+        <section>
+
+        </section>
+        <!-- social media -->
+        <section>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>    
+</body>
+</html>
